@@ -1,0 +1,44 @@
+{
+  "name": "radix-vue2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "./dist",
+    "./LICENSE"
+  ],
+  "scripts": {
+    "build": "rimraf dist  && pnpm type-check && pnpm build-only",
+    "build-only": "vite build",
+    "type-check": "vue-tsc -p tsconfig.check.json --noEmit",
+    "type-gen": "vue-tsc --declaration  --emitDeclarationOnly",
+    "test": "vitest",
+    "pub:release": "pnpm publish --access public",
+    "story:dev": "histoire dev --host",
+    "story:build": "histoire build",
+    "story:preview": "histoire preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@histoire/plugin-vue2": "^0.17.6",
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "@vitejs/plugin-vue2-jsx": "^1.1.1",
+    "@vue-macros/volar": "^0.17.4",
+    "unplugin-vue-macros": "^2.7.0",
+    "vite-plugin-dts": "^3.6.4",
+    "vue": "2.7.15"
+  },
+  "peerDependencies": {
+    "vue": "2.7.15"
+  },
+  "dependencies": {
+    "@motionone/dom": "^10.16.4",
+    "@vueuse/core": "^10.6.1",
+    "vue-frag": "^1.4.3"
+  }
+}

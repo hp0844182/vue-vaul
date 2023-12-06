@@ -1,0 +1,34 @@
+{
+  "extends":"../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "declaration": false,
+    "lib": ["esnext", "dom"],
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "types": ["unplugin-vue-macros/vue2-macros-global"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "vueCompilerOptions": {
+    "target": 2.7,
+    "plugins": [
+      "@vue-macros/volar/define-options",
+      "@vue-macros/volar/define-models",
+      "@vue-macros/volar/define-props",
+      "@vue-macros/volar/define-props-refs",
+      "@vue-macros/volar/short-vmodel",
+      "@vue-macros/volar/define-slots",
+      "@vue-macros/volar/jsx-directive",
+      "@vue-macros/volar/setup-jsdoc"
+    ]
+  }
+}

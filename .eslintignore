@@ -1,0 +1,6 @@
+.husky 
+dist
+public
+node_modules
+*.json
+*.less

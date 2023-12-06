@@ -1,0 +1,8 @@
+export { default as DrawerRoot } from './DrawerRoot.vue'
+export { default as DrawerContent } from './DrawerContent.vue'
+export { default as DrawerOverlay } from './DrawerOverlay.vue'
+export { DialogTrigger as DrawerTrigger } from 'radix-vue2'
+export { DialogClose as DrawerClose } from 'radix-vue2'
+export { DialogPortal as DrawerPortal } from 'radix-vue2'
+export { DialogTitle as DrawerTitle } from 'radix-vue2'
+export { DialogDescription as DrawerDescription } from 'radix-vue2'
